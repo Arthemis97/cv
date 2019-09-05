@@ -1,0 +1,29 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "cv",
+  "author": "Tod-Od Khurelbaatar",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "ks-vue-fullpage": "^1.2.8",
+    "node-sass": "^4.12.0",
+    "nuxt": "^2.0.0",
+    "sass-loader": "^8.0.0",
+    "velocity-animate": "^1.5.2",
+    "velocityjs": "^1.1.4",
+    "vue-animejs": "^2.1.1",
+    "vue-icon": "^2.1.1",
+    "vue-light-timeline": "^1.0.3",
+    "vue-particles": "^1.0.9",
+    "vue-typer": "^1.2.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.1.2"
+  }
+}
