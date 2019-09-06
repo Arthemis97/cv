@@ -16,6 +16,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
+      {src: 'https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js', type: 'text/javascript'},
       {src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.1/velocity.min.js', type: 'text/javascript'}
     ]
   },
@@ -38,6 +39,10 @@ export default {
     {src: '~/plugins/particles', ssr: false},
     {src: '~/plugins/typer', ssr: false},
     {src: '~/plugins/icons', ssr: false},
+    {src: '~/plugins/perfect-scroll', ssr: false},
+    {src: '~/plugins/vue-picture-swipe', ssr: false},
+    {src: '~/plugins/vue-modal', ssr: false},
+    {src: '~/plugins/vtooltip', ssr: false},
     {src: '~/plugins/timeline', ssr: false}
     // {src: '~/plugins/velocity', ssr: false}
   ],
