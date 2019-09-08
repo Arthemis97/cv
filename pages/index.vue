@@ -12,7 +12,7 @@
       :lineLinked="true"
       :lineOpacity="0.4"
       :linesDistance="150"
-      :moveSpeed="3"
+      :moveSpeed="2"
       :hoverEffect="true"
       hoverMode="grab"
       :clickEffect="true"
@@ -29,7 +29,12 @@
         <transition name="fade" v-show="$ksvuefp.canAnimContent(index, true)">
           <div class="content tw-flex tw-mx-auto">
             <div class="tw-text-white tw-w-full tw-text-center" v-if="index == 0">
-              <svg viewBox="0 0 600 500" id="lightbulb" class="tw-mb-10" v-anime="{ translateY: 20, direction: 'alternate', easing: 'linear', loop: true, duration: 1500 }">
+              <svg
+                viewBox="0 0 600 500"
+                id="lightbulb"
+                class="tw-mb-10"
+                v-anime="{ translateY: 20, direction: 'alternate', easing: 'linear', loop: true, duration: 1500 }"
+              >
                 <g id="Layer_3">
                   <polygon fill="#BDBDBD" points="215.8,58.3 228.2,65.6 260.6,34.2   " />
                   <polygon fill="#C9C9C9" points="193.2,97.2 228.2,65.6 215.8,58.3   " />
@@ -246,12 +251,17 @@
                   />
                 </g>
               </svg>
-              <vue-typer v-if="$ksvuefp.fpLoaded" :repeat="0" text="Welcome to my personal webpage :))"></vue-typer>
+              <vue-typer
+                v-if="$ksvuefp.fpLoaded"
+                :repeat="0"
+                text="Welcome to my personal webpage :)"
+              ></vue-typer>
             </div>
             <div class="tw-text-white tw-w-full tw-text-center" v-if="index == 1">
               <h4
                 class="content-title tw-cursor-pointer tw-text-2xl tw-text-shadow-lg tw-mb-10"
-              >Coming soon...</h4>
+              >About me</h4>
+              <vue-accodrion :items="aboueMeItems" />
             </div>
             <div class="tw-text-white tw-w-full tw-text-center" v-if="index == 2">
               <div class="tw-flex">
@@ -271,7 +281,7 @@
             </div>
             <div class="project-container tw-text-white tw-w-full" v-if="index == 3">
               <h4
-                class="content-title tw-cursor-pointer tw-text-2xl tw-text-shadow-lg tw-mb-10"
+                class="content-title tw-cursor-pointer tw-text-2xl tw-mx-auto tw-text-shadow-lg tw-mb-10"
               >Төсөл & Туршлага</h4>
               <perfect-scrollbar class="tw-max-h-full">
                 <div class="flexbin flexbin-margin">
@@ -286,7 +296,7 @@
                 </div>
               </perfect-scrollbar>
             </div>
-            <div class="tw-text-white tw-w-full" v-if="index == 4">
+            <div class="tw-text-white tw-w-full tw-text-center" v-if="index == 4">
               <h4
                 class="content-title tw-cursor-pointer tw-text-2xl tw-text-shadow-lg tw-mb-10"
               >Чадвар & Технологи</h4>
@@ -340,34 +350,54 @@
 
               <div class="social-icons tw-flex tw-flex-wrap">
                 <div class="social-icons__icon tw-px-3 tw-mb-8 tw-cursor-pointer tw-w-1/5">
-                  <img class="tw-mx-auto" src="/images/facebook.png" alt />
+                  <a href="https://fb.com/khtodod" target="_blank">
+                    <img class="tw-mx-auto" src="/images/facebook.png" alt />
+                  </a>
                 </div>
                 <div class="social-icons__icon tw-px-3 tw-mb-8 tw-cursor-pointer tw-w-1/5">
-                  <img class="tw-mx-auto" src="/images/twitter.png" alt />
+                  <a href="https://twitter.com/khtodod" target="_blank">
+                    <img class="tw-mx-auto" src="/images/twitter.png" alt />
+                  </a>
                 </div>
                 <div class="social-icons__icon tw-px-3 tw-mb-8 tw-cursor-pointer tw-w-1/5">
-                  <img class="tw-mx-auto" src="/images/instagram.png" alt />
+                  <a href="https://instagram.com/tododkh" target="_blank">
+                    <img class="tw-mx-auto" src="/images/instagram.png" alt />
+                  </a>
                 </div>
                 <div class="social-icons__icon tw-px-3 tw-mb-8 tw-cursor-pointer tw-w-1/5">
-                  <img class="tw-mx-auto" src="/images/youtube.png" alt />
+                  <a href="https://www.youtube.com/channel/UCNsMA3z1wSz4NlejntCwM5Q" target="_blank">
+                    <img class="tw-mx-auto" src="/images/youtube.png" alt />
+                  </a>
                 </div>
                 <div class="social-icons__icon tw-px-3 tw-mb-8 tw-cursor-pointer tw-w-1/5">
-                  <img class="tw-mx-auto" src="/images/discord.png" alt />
+                  <a target="_blank">
+                    <img class="tw-mx-auto" src="/images/discord.png" alt />
+                  </a>
                 </div>
                 <div class="social-icons__icon tw-px-3 tw-mb-8 tw-cursor-pointer tw-w-1/5">
-                  <img class="tw-mx-auto" src="/images/telegram.png" alt />
+                  <a target="_blank">
+                    <img class="tw-mx-auto" src="/images/telegram.png" alt />
+                  </a>
                 </div>
                 <div class="social-icons__icon tw-px-3 tw-mb-8 tw-cursor-pointer tw-w-1/5">
-                  <img class="tw-mx-auto" src="/images/skype.png" alt />
+                  <a target="_blank">
+                    <img class="tw-mx-auto" src="/images/skype.png" alt />
+                  </a>
                 </div>
                 <div class="social-icons__icon tw-px-3 tw-mb-8 tw-cursor-pointer tw-w-1/5">
-                  <img class="tw-mx-auto" src="/images/reddit.png" alt />
+                  <a target="_blank">
+                    <img class="tw-mx-auto" src="/images/reddit.png" alt />
+                  </a>
                 </div>
                 <div class="social-icons__icon tw-px-3 tw-mb-8 tw-cursor-pointer tw-w-1/5">
-                  <img class="tw-mx-auto" src="/images/whatsapp.png" alt />
+                  <a target="_blank">
+                    <img class="tw-mx-auto" src="/images/whatsapp.png" alt />
+                  </a>
                 </div>
                 <div class="social-icons__icon tw-px-3 tw-mb-8 tw-cursor-pointer tw-w-1/5">
-                  <img class="tw-mx-auto" src="/images/viber.png" alt />
+                  <a target="_blank">
+                    <img class="tw-mx-auto" src="/images/viber.png" alt />
+                  </a>
                 </div>
               </div>
             </div>
@@ -401,13 +431,93 @@ export default {
     }
   },
   created() {
-    console.log(this.$ksvuefp.fpLoaded)
+    console.log(this.$ksvuefp.fpLoaded);
   },
   data() {
     return {
       skillShowByIndex: null,
       otherShowByIndex: null,
       currentProject: null,
+      aboueMeItems: [
+        {
+          title: "Товч намтар",
+          value: `
+              <p>
+                1997 оны 11 сарын 29нд Орхон аймаг төрсөн. Орхон аймгийн 6-р бага сургуульд бага ангиа төгсөн Орхон аймгийн 5-р сургуульд дунд ангиа төгссөн. Ахлах ангиа Эрдэм ахлах /хуучнаар 13-р сургууль/-д сурсан. 2014 оноос 2018 онд Их сургуулиа Мэдээлэл технологийн инженер мэргэжилээр төрөлөх хотдоо төгссөн.
+              </p>
+              <ul>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Төрсөн он-сар-өдөр: </b> 1997-11-29
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Жил: </b> Үхэр
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Орд: </b> Нум
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Ургийн овог: </b> Ар гөрөөчин
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Үндэс угсаа: </b> Халх
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Төрсөн газар: </b> Орхон аймаг, Эрдэнэт хот
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Оршин суугаа газар: </b> Баянгол Дүүрэг, Улаанбаатар хот
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Ахлах сургууль: </b> Орхон аймаг, Эрдэнэт хот, Эрдэм ахлах сургууль
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Их сургууль: </b> Орхон аймаг, Эрдэнэт хот Ш.Отгонбилэг-ийн нэрэмжит Технологийн Их Сургууль 
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Гэр бүл:</b> Эцэг, эх гурван дүү
+                </li>
+              </ul>
+            `
+        },
+        {
+          title: "Бусад",
+          value: `
+              <ul>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Дуу/Хөгжим:</b> Alternative rock, Heavy rock (Nirvana,Metallica,Scorpions,Aerosmith, Guns N' Roses, SOAD). <a class='tw-text-white' target='_blank' href="https://www.youtube.com/playlist?list=PLKpyE4zZq8Ua1CfvD7daqNmWyn0wV0eNg">Youtube Playlist сонирхох :)</a>
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Шашин шүтлэг: </b> Тодорхой шүтлэг байхгүй
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Хобби: </b> Дуу хөгжим, Түүх, Технологи, Археологи, Кино, Монгол бөх, Домог
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Дуртай кино: </b> Legends of the Fall, Forrest Gump, Blood diamond, Lord of the rings
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Дуртай дуу: </b> Unforgiven I/II/III, Chop Suey, Fuel, Don't Cry, You and I, Bed of Roses
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>Ном: </b> Beast Men and Gods by Ferdynand Antoni Ossendowski
+                </li>
+                <li class='tw-my-1'>
+                  <b class='tw-mr-3'>LGBT байр суурь: </b> Дэмждэггүй
+                </li>
+              </ul>
+            `
+        },
+        {
+          title: "Сошиал сүлжээнд...",
+          value: `
+            <ul>
+              <li><a target="_blank" href="http://facebook.com/khtodod">facebook.com/khtodod</a></li>
+              <li><a target="_blank" href="http://twitter.com/khtodod">twitter.com/khtodod</a></li>
+              <li><a target="_blank" href="http://instagram.com/tododkh">instagram.com/tododkh</a></li>
+            </ul>
+          `
+        }
+      ],
       projects: [
         {
           title: "Tabsolution Co.,Ltd",
@@ -420,11 +530,11 @@ export default {
           url: "http://baitogaijin.com"
         },
         { title: "EnaBull", image: "enabull.png", url: "http://enabull.com" },
-        {
-          title: "InCollex",
-          image: "incollex.png",
-          url: "http://incollex.com"
-        },
+        // {
+        //   title: "InCollex",
+        //   image: "incollex.png",
+        //   url: "http://incollex.com"
+        // },
         {
           title: "Орхон аймаг Эрдэм ахлах сургууль",
           image: "school.png",
@@ -974,7 +1084,8 @@ h6 {
     height: 250px;
   }
 
-  svg#lightbulb, svg#cutout {
+  svg#lightbulb,
+  svg#cutout {
     width: 300px;
     height: 250px;
     z-index: 200;
@@ -1001,8 +1112,33 @@ h6 {
       transform-origin: 50% 50%;
       transition: 250ms;
       &:hover {
-        transform: scale(1.5);
-        z-index: 1000;
+        // transform: scale(1.5);
+        // z-index: 1000;
+        fill: #000;
+      }
+    }
+  }
+
+  .accordion {
+    border: none;
+    .accordion__item {
+      border: none;
+      .accordion__title {
+        color: #fff;
+        padding: 15px 0;
+        .accordion__toggle-button {
+          &::before {
+            background: #fff;
+          }
+          &::after {
+            background: #fff;
+          }
+        }
+      }
+      .accordion__value {
+        padding: 0 0 0 5px;
+        color: #aaa;
+        font-size: 12px;
       }
     }
   }

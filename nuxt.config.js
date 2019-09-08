@@ -43,6 +43,7 @@ export default {
     {src: '~/plugins/vue-picture-swipe', ssr: false},
     {src: '~/plugins/vue-modal', ssr: false},
     {src: '~/plugins/vtooltip', ssr: false},
+    {src: '~/plugins/accordion', ssr: false},
     {src: '~/plugins/timeline', ssr: false}
     // {src: '~/plugins/velocity', ssr: false}
   ],

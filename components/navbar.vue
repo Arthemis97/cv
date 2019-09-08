@@ -5,12 +5,13 @@
     </div>
     <div class="tw-ml-auto">
       <ul class="tw-flex tw-text-xs">
-        <li class="tw-ml-8 tw-cursor-pointer" :class="this.$ksvuefp.currentIndex == 0 ? 'tw-font-bold' : 'font-hairline'" @click="goToPage(0)">HOME</li>
-        <li class="tw-ml-8 tw-cursor-pointer" :class="this.$ksvuefp.currentIndex == 1 ? 'tw-font-bold' : 'font-hairline'" @click="goToPage(1)">ABOUT ME</li>
-        <li class="tw-ml-8 tw-cursor-pointer" :class="this.$ksvuefp.currentIndex == 2 ? 'tw-font-bold' : 'font-hairline'" @click="goToPage(2)">TIMELINE</li>
-        <li class="tw-ml-8 tw-cursor-pointer" :class="this.$ksvuefp.currentIndex == 3 ? 'tw-font-bold' : 'font-hairline'" @click="goToPage(3)">PORTFOLIO</li>
-        <li class="tw-ml-8 tw-cursor-pointer" :class="this.$ksvuefp.currentIndex == 4 ? 'tw-font-bold' : 'font-hairline'" @click="goToPage(4)">SKILLS</li>
-        <li class="tw-ml-8 tw-cursor-pointer" :class="this.$ksvuefp.currentIndex == 5 ? 'tw-font-bold' : 'font-hairline'" @click="goToPage(5)">CONTACT ME</li>
+        <li class="tw-ml-8 tw-cursor-pointer hover:tw-bg-white hover:tw-text-black tw-px-3 tw-rounded" :class="this.$ksvuefp.currentIndex == 0 ? 'tw-font-bold' : 'font-hairline'" @click="goToPage(0)">HOME</li>
+        <li class="tw-ml-8 tw-cursor-pointer  hover:tw-bg-white hover:tw-text-black tw-px-3 tw-rounded" :class="this.$ksvuefp.currentIndex == 1 ? 'tw-font-bold' : 'font-hairline'" @click="goToPage(1)">ABOUT ME</li>
+        <li class="tw-ml-8 tw-cursor-pointer  hover:tw-bg-white hover:tw-text-black tw-px-3 tw-rounded" :class="this.$ksvuefp.currentIndex == 2 ? 'tw-font-bold' : 'font-hairline'" @click="goToPage(2)">TIMELINE</li>
+        <li class="tw-ml-8 tw-cursor-pointer  hover:tw-bg-white hover:tw-text-black tw-px-3 tw-rounded" :class="this.$ksvuefp.currentIndex == 3 ? 'tw-font-bold' : 'font-hairline'" @click="goToPage(3)">PORTFOLIO</li>
+        <li class="tw-ml-8 tw-cursor-pointer  hover:tw-bg-white hover:tw-text-black tw-px-3 tw-rounded" :class="this.$ksvuefp.currentIndex == 4 ? 'tw-font-bold' : 'font-hairline'" @click="goToPage(4)">SKILLS</li>
+        <li class="tw-ml-8 tw-cursor-pointer  hover:tw-bg-white hover:tw-text-black tw-px-3 tw-rounded" :class="this.$ksvuefp.currentIndex == 5 ? 'tw-font-bold' : 'font-hairline'" @click="goToPage(5)">CONTACT ME</li>
+        <li class="tw-ml-8 tw-cursor-pointer  hover:tw-bg-white hover:tw-text-black tw-px-3 tw-rounded"><a href="/cv.pdf" target="_blank">CV ТАТАХ</a></li>
       </ul>
     </div>
   </div>
