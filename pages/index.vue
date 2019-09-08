@@ -426,7 +426,7 @@
 export default {
   head() {
     return {
-      title: "Personal page"
+      title: "$root >/ Гашилсан тархиндаа бэлчиж явна..."
     };
   },
   computed: {
