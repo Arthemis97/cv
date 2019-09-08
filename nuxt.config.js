@@ -68,12 +68,11 @@ export default {
   build: {
     vendor: [
       'velocity-animate',
-      'fullpage',
-      'animejs',
-      'typer',
-      'icons',
-      'timeline',
-      'main'
+      'ks-vue-fullpage',
+      'vue-animejs',
+      'vue-typer',
+      'vue-icon',
+      'vue-light-timeline'
     ],
     /*
     ** You can extend webpack config here
