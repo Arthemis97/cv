@@ -57,6 +57,11 @@ export default {
     configPath: '~/tailwind.config.js',
     cssPath: '~/assets/css/tailwind.css'
   },
+  purgeCSS: {
+    whitelist: ['body', 'html', 'nuxt-progress',],
+    whitelistPatternsChildren: [/^ksvuefp/],
+    whitelistPatterns: [/^ksvuefp/]
+  },
   /*
   ** Nuxt.js modules
   */
