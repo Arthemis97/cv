@@ -548,7 +548,8 @@ export default {
           image: "school.png",
           url: "http://13school.edu.mn"
         },
-        { title: "Ship2Mgl", image: "ship2.png", url: "http://ship2mgl.com" }
+        { title: "Ship2Mgl", image: "ship2.png", url: "http://ship2mgl.com" },
+        { title: "TradesAndSource", image: "tradesandsource2.png", url: "http://tradesandsource.com" }
       ],
       other: [
         {
